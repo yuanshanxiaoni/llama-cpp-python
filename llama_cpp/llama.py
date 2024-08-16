@@ -188,7 +188,7 @@ class Llama:
         self.verbose = verbose
 
         set_verbose(verbose)
-
+        print('<***********ppcamall tini*************>')
         if not Llama.__backend_initialized:
             with suppress_stdout_stderr(disable=verbose):
                 llama_cpp.llama_backend_init()
